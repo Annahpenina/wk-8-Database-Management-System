@@ -1,45 +1,54 @@
-# wk-8-Database-Management-System
+# 🎨 Creative Arts School - Student Records Database Management System
 
-Description
-Question 1: Build a Complete Database Management System
-Objective:
-Design and implement a full-featured database using only MySQL.
+## 📌 Project Title
+Creative Arts School - Student Records Database Management System (DBMS)
 
-What to do:
+## 📝 Description
 
-Choose a real-world use case (e.g., Library Management, Student Records, Clinic Booking System, Inventory Tracking, etc.)
+This project implements a full-featured **Relational Database Management System** using MySQL for managing student records at a Creative Arts School. It is designed to streamline and organize academic data for students, instructors, departments, and courses.
 
-Create a well-structured relational database using SQL.
+Key features include:
 
-Use SQL to create:
+- 📚 Department management  
+- 🧑‍🎓 Student profiles and enrollments  
+- 👩‍🏫 Instructor records  
+- 📖 Course offerings  
+- 📅 Attendance tracking  
+- 🔐 Role-based access control (Admin, Instructor, Student)  
+- 👥 User account management with permissions  
 
-Tables with proper constraints (PK, FK, NOT NULL, UNIQUE)
+This system ensures data consistency, security, and relational integrity using **foreign keys**, **constraints**, and **ENUM-based roles**.
 
-Relationships (1-1, 1-M, M-M where needed)
+---
 
-Deliverables:
+## 🗂️ Database Schema Overview
 
-A single .sql file containing your:
+### Tables:
+- **department** – Stores department information  
+- **student** – Holds student personal and academic details  
+- **instructor** – Manages instructor details  
+- **course** – Associates instructors and departments with courses  
+- **enrollment** – Tracks which students are enrolled in which courses  
+- **attendance** – Records student attendance for each course session  
+- **user** – Handles user login credentials and roles  
+- **role_permission** – Implements role-based access control
 
-CREATE TABLE statements
+All tables include proper constraints such as `PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, and `UNIQUE`.
 
+---
 
-Submission Instructions
+## ⚙️ How to Set Up and Run the Project
 
-Push your complete project to a GitHub repository
+### Prerequisites:
+- ✅ MySQL Server (5.7 or above recommended)
+- ✅ MySQL Workbench or any SQL client
+- ✅ A MySQL user with privileges to create databases and tables
 
-📌 README file with:
+### Setup Instructions:
 
-Project Title
-
-Description of what your project does
-
-How to run/setup the project (or import SQL)
-
-Screenshot or link to your ERD
-
-The repo must include:
-
-
-
-🧠 For Question 1:
+1. **Clone or download this project** to your machine.
+2. Open your MySQL client (e.g., MySQL Workbench).
+3. Create a new database:
+   ```sql
+   CREATE DATABASE studentrecords;
+   USE studentrecords;
